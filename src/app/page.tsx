@@ -1,19 +1,37 @@
+import { Inter } from "next/font/google";
+import ThemeSwitch from "../../components/ThemeSwitch";
+
+const MainTitleFont = Inter({ subsets: ["latin"], weight: ["700"] });
+const MainCategoryFont = Inter({ subsets: ["latin"], weight: ["600"] });
+
 export default function Home() {
   return (
-    <main className="flex flex-col w-full items-center border">
-      <div className="border">박근우 인생 설계도</div>
-      <div className="w-[400px]">
-        <div>장점</div>
-        <div>없음 한게 없음 시발</div>
-      </div>
-      <div className="w-[400px]">
-        <div>단점</div>
-        <div>끈기없음</div>
-        <div>끈기없음</div>
-      </div>
-      <div className="w-[400px]">
-        <div>해야 할 것</div>
-        <div>ㅈㄴ 많음</div>
+    <main className={`flex flex-col w-full items-center`}>
+      <div className={`flex relative border w-full h-[100px] items-center`}>
+        <div
+          className={`flex justify-center ${MainTitleFont.className} text-3xl w-1/2 text-gradient`}
+        >
+          MY WORLD
+        </div>
+        <div className={`flex w-1/2 justify-center`}>
+        
+          <div
+            className={`px-2 mx-1 ${MainCategoryFont.className} text-center text-xl text-[#808080] w-fit h-fit hover:bg-[#E6E6E6] rounded-sm`}
+          >
+            홈
+          </div>
+          <div
+            className={`px-2 mx-1 ${MainCategoryFont.className} text-xl text-[#808080] w-fit h-fit hover:bg-[#E6E6E6] rounded-sm`}
+          >
+            프로젝트
+          </div>
+          <div
+            className={`px-2 mx-1 ${MainCategoryFont.className} text-xl text-[#808080] w-fit h-fit hover:bg-[#E6E6E6] rounded-sm`}
+          >
+            질문하기
+          </div>
+          <ThemeSwitch />
+        </div>
       </div>
     </main>
   );
