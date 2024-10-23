@@ -8,13 +8,14 @@
 }
 
 [data-theme='dark'] {
-  --background: black;
+  --background: #2f2f2f;
   --foreground: white;
 }
 
 body {
   background-color: var(--background);
   color: var(--foreground);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .text-gradient {

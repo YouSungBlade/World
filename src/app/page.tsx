@@ -16,17 +16,17 @@ export default function Home() {
         <div className={`flex w-1/2 justify-center`}>
         
           <div
-            className={`px-2 mx-1 ${MainCategoryFont.className} text-center text-xl text-[#808080] w-fit h-fit hover:bg-[#E6E6E6] rounded-sm`}
+            className={`px-2 mx-1 ${MainCategoryFont.className} text-center text-xl text-[#808080] w-fit h-fit hover:bg-[#E6E6E6] rounded-sm cursor-pointer`}
           >
             홈
           </div>
           <div
-            className={`px-2 mx-1 ${MainCategoryFont.className} text-xl text-[#808080] w-fit h-fit hover:bg-[#E6E6E6] rounded-sm`}
+            className={`px-2 mx-1 ${MainCategoryFont.className} text-xl text-[#808080] w-fit h-fit hover:bg-[#E6E6E6] rounded-sm cursor-pointer`}
           >
             프로젝트
           </div>
           <div
-            className={`px-2 mx-1 ${MainCategoryFont.className} text-xl text-[#808080] w-fit h-fit hover:bg-[#E6E6E6] rounded-sm`}
+            className={`px-2 mx-1 ${MainCategoryFont.className} text-xl text-[#808080] w-fit h-fit hover:bg-[#E6E6E6] rounded-sm cursor-pointer`}
           >
             질문하기
           </div>
